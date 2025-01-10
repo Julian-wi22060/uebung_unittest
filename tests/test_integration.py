@@ -18,7 +18,7 @@ class TestImageUploadIntegration(unittest.TestCase):
         # Act
         response = api.upload_image(image)
 
-        # Dynamische Print-Nachricht
+        # Print test result
         print(
             f"Test '{self._testMethodName}': Test für Bild mit Format {image.file_format} und Größe {image.size_in_bytes} Bytes. API-Antwort: {response}")
 
@@ -39,7 +39,7 @@ class TestImageUploadIntegration(unittest.TestCase):
         # Act
         response = api.upload_image(image)
 
-        # Dynamische Print-Nachricht
+        # Print test result
         print(
             f"Test '{self._testMethodName}': Test für Bild mit Format {image.file_format} und Größe {image.size_in_bytes} Bytes. API wurde nicht aufgerufen. Antwort: {response}")
 
